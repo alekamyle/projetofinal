@@ -1,0 +1,291 @@
+/*Estrutura d.corpo*/
+body {
+    color: #000;/*Cor d.letras*/
+    font-size: 16px;/*Tamanho d.letras*/
+    font-family: Arial, sans-serif;/*Estilo d.letras*/
+    background-color: #F0F0F0; /*Cor d.fundo: Branco-Neve*/
+}
+
+/*Cabeçalho*/
+header {
+    display: flex;/*Tela adaptável*/
+    padding: 10px;/*Espaçamento dentre elementos*/
+    align-items: center;/*Alinha itens ao centro*/
+    border-bottom: 1px solid #000;/*Linha d.contorno embaixo*/
+    flex-direction: row;/*Direção adaptável d.elementos em coluna*/
+    justify-content: center;/*Alinha conteúdo na horizontal*/
+    background: linear-gradient(0deg, #F9CF7D -30%, #FA7300 50%, #FF5900 100%);/*Cor d.fundo: Laranja-Degradê*/
+}
+
+/*Barra d.navegação*/
+nav {
+    display: inline-block;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Logo*/
+#logo {
+    width: 90px;/*Largura*/
+    height: 90px;/*Altura*/
+    margin-bottom: 15px;
+    border: 1px solid #000;/*Contorno d.borda*/
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);/*Sombra d.logo*/
+    border-radius: 80px;/*Circunferência d.borda*/
+}
+
+#logoPerfil {
+    width: 90px;/*Largura*/
+    height: 90px;/*Altura*/
+    margin-bottom: 15px;
+    border: 1px solid #000;/*Contorno d.borda*/
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);/*Sombra d.logo*/
+    border-radius: 80px;/*Circunferência d.borda*/
+    float: right;
+}
+
+
+/*Lista*/
+ul {
+    margin: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;/*Remove marcadores d.lista*/
+    justify-content: center;
+}
+
+/* Efeito de transição para a cor dos links */
+ul li a {
+    color: #000000;
+    margin: 10px;
+    font-weight: bold;/*Letras em negrito*/
+    text-decoration: none;/*Letras sem sublinhados*/
+    transition: transform 0.3s, color 0.3s;/*Transição suave no zoom e na cor dos links*/
+}
+
+/*Efeito ao passar cursor*/
+ul li a:hover {
+    transform: scale(1.1);/*Zoom d.10% nos links ao passar cursor*/
+    color: #FF5900;/*Cor ao passar cursor*/
+}
+
+.container {
+    z-index: 1;
+    position: relative;
+}
+
+.opcoesSalgados {
+    text-align: center;
+    height: 0;
+    background-color: #f9ac4e;
+    position: absolute;
+    top: 34.5px;
+    right: -0.2px;
+    overflow: hidden;
+    transition: height 0.3s;
+    width: 90.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoesBebidas {
+    text-align: center;
+    height: 0;
+    background-color: #f9ac4e;
+    position: absolute;
+    top: 34.5px;
+    right: -0.2px;
+    overflow: hidden;
+    transition: height 0.3s;
+    width: 82.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+a#alcolicas {
+    margin: 10px 0 10px 0;
+}
+
+.opcoesDiversificados {
+    text-align: center;
+    height: 0;
+    background-color: #f9ac4e;
+    position: absolute;
+    top: 34.5px;
+    right: -0.2px;
+    overflow: hidden;
+    transition: height 0.3s;
+    width: 129.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+a#assados {
+    margin: auto;
+}
+
+a#fritos {
+    margin: auto;
+}
+/* perfil botao */
+/*==============================**Desativada, pois não será usada nesta página*===============================*/
+                                            /*Barra d.pesquisa*/
+/*.search {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Campo d.Preenchimento-Barra d.pesquisa
+.search input {
+    width: 209px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+/*Botão-Barra d.pesquisa
+.search button {
+    background-color: #FF8822;
+    color: #FFF;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}*/
+
+/*Sessão-Receitas Popular*/
+.popular-recipes {
+    padding: 20px;
+    background-color: #FFF;
+}
+/*Título-Receitas Popular*/
+.popular-recipes h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*Sessão-Categoria d.Receitas*/
+.categorie-recipes {
+    height: 380px;/*Exemplo d.altura p.conteúdo - Categoria d.Receitas*/
+    padding: 20px;
+}
+
+/*Título-Categoria d.Receitas*/
+.categorie-recipes h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*Sessão-Contato*/
+.contact {
+    height: 206.5px;
+    text-align: center;/*Texto alinhado ao centro*/
+    background-color: #F65600;
+}
+
+/*Título-Contato*/
+.contact h2 {
+    color: #000;
+    margin: 0;
+    padding: 18px;
+    font-size: 24px;
+}
+
+/*Paragráfo-Contato*/
+.contact p {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/*Social-Contato*/
+.socialcontact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Icones-Contato*/
+.socialcontact img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+.whats {
+    margin-left: 35px;
+}
+
+.email {
+    margin-left: 50px;
+}
+
+.instagram{
+    margin-left: 50px;
+}
+
+/*Email&Whats-Contato*/
+.contact a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Rodapé*/
+footer {
+    color: #FFF;
+    padding: 15px;
+    border-top: 1px solid #000;/*Linha d.contorno emcima*/
+    background: linear-gradient(0deg, #F65600 25%, #FA7300 65%, #F9CF7D 150%);
+    text-align: center;
+    text-shadow: 2px 1px 3px #000;/*Sombra d.letras*/
+}
+
+/*Quando largura d.tela igual d.Celular*/
+@media screen and (max-width: 768px) {
+    .opcoesSalgados {
+        background-color: #f9a03d;
+        position: absolute;
+        top: 19.5px;
+        right: -0.2px;
+    }
+    /*Sessão-Contato*/
+    .contact {
+        height: 100%;
+        text-align: center;/*Texto alinhado ao centro*/
+        background-color: #FC7024;
+    }
+
+    /*Social-Contato*/
+    .socialcontact {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*Icones-Contato*/
+    .socialcontact img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 5px;
+    }
+
+    .whats {
+        margin: 0;
+    }
+
+    .email {
+        margin: 0;
+    }
+
+    .instagram{
+        margin: 0;
+    }
+}
